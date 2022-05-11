@@ -1,0 +1,207 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  /* font-family: cursive; */
+  color: rgb(238, 238, 238);
+  background-color: rgb(34, 34, 34);
+  /* background-color: #a0e68d; */
+}
+
+.header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid rgb(238, 238, 238);
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.btn {
+  border-style: none;
+  background-color: #eeeeee;
+  font-family: inherit;
+  font-size: 2rem;
+  color: rgb(34, 34, 34);
+  padding: 1.8rem 2.6rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #eeeeee;
+  background-color: rgb(34, 34, 34);
+  color: #eeeeee;
+}
+
+.Again {
+  margin-top: 1.4rem;
+  margin-left: 2rem;
+}
+
+.number {
+  color: rgb(34, 34, 34);
+  background-color: #eeeeee;
+  font-size: 6rem;
+  width: 15rem;
+  text-align: center;
+  padding: 3rem 0rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  height: 55vh;
+  display: flex;
+  color: rgb(238, 238, 238);
+  align-items: center;
+  justify-content: space-around;
+  /* margin-top: 5.2rem; */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52rem;
+}
+
+.guess {
+  width: 21rem;
+  background: none;
+  border: 4px solid #eeeeee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  padding: 2.5rem 2rem;
+}
+
+.check {
+  width: 20rem;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+.message {
+  margin-bottom: 8rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+.creator {
+  height: 2vh;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.creator:hover {
+  color: #a0e68d;
+  transition: all 0.5ms;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 450px) {
+  .header {
+    height: 35vh;
+  }
+
+  .title {
+    font-size: 2rem;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    color: rgb(34, 34, 34);
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+  }
+
+  .between {
+    font-size: 1rem;
+  }
+
+  .number {
+    font-size: 3.6rem;
+    padding: 2rem 0rem;
+  }
+
+  main {
+    height: 55vh;
+  }
+
+  .left {
+    width: 40rem;
+  }
+
+  .check {
+    width: 15rem;
+  }
+
+  .right {
+    width: 40rem;
+    font-size: 1.2rem;
+  }
+
+  .guess {
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .message {
+    margin-bottom: 5rem;
+  }
+
+  .creator {
+    height: 2vh;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
