@@ -1,3 +1,4 @@
+
 /** @format */
 
 * {
@@ -79,7 +80,7 @@ body {
 }
 
 main {
-  height: 55vh;
+  height: 52vh;
   display: flex;
   color: rgb(238, 238, 238);
   align-items: center;
@@ -125,9 +126,8 @@ main {
 }
 
 .creator {
-  height: 2vh;
   font-size: 1.6rem;
-  text-align: center;
+  text-align: end;
   color: #ffffff;
   padding: 1rem;
 }
@@ -137,9 +137,76 @@ main {
   transition: all 0.5ms;
 }
 
+.rules {
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  padding: 1.4rem 2rem;
+}
+
+footer {
+  height: 5vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 5;
+}
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #222;
+  padding: 6rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.dark {
+  color: rgb(15, 254, 67);
+  font-size: 1.6rem;
+}
+
+.closer {
+  position: absolute;
+  top: 0.6rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 /* Media Queries */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .header {
     height: 35vh;
   }
@@ -167,7 +234,7 @@ main {
   }
 
   main {
-    height: 55vh;
+    height: 50vh;
   }
 
   .left {
@@ -196,12 +263,60 @@ main {
     margin-bottom: 5rem;
   }
 
+  footer {
+    height: 3vh;
+  }
+
   .creator {
-    height: 2vh;
+    position: absolute;
+    right: 1rem;
+    bottom: 5rem;
     font-size: 1rem;
-    text-align: center;
     color: #ffffff;
     padding: 1rem;
-    margin-bottom: 1rem;
+  }
+}
+
+/* aaa */
+/* aaa */
+
+.rules {
+  position: absolute;
+  bottom: 5.4rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem 0.8rem;
+}
+
+footer {
+  height: 5vh;
+}
+
+.pop-up {
+  width: 50%;
+  padding: 5.5rem;
+  line-height: 1.7;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.dark {
+  color: rgb(15, 254, 67);
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 345px) {
+  .right {
+    font-size: 1rem;
   }
 }
